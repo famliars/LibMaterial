@@ -1,8 +1,8 @@
 # LibMica
 
-> Plan A: ⟳ 状态栏
+> Plan ⟳: 状态栏
 
-> Plan B: ↻ 系统交互特效
+> Plan ↻: 系统交互特效
 
 ## Plan X
 
