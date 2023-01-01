@@ -1,18 +1,18 @@
 # LibMica
-> Plan A:状态栏
-> Plan B:系统交互特效
+> Plan A:状态栏 
+> Plan B:系统交互特效 
 
 > ## Plan X
 ![image](https://user-images.githubusercontent.com/78424351/185796695-81eb8401-bc91-4dcd-b940-90eab628165d.png)
 
 # Win32 API
-> Pause
+> Pause 
 # Nuget Package
-> Pinvoke.Dwmapi
-> Pinvoke.User32
+> Pinvoke.Dwmapi 
+> Pinvoke.User32 
 
 ## 参考代码
-> C++ 响应贴靠布局
+> C++ 响应贴靠布局 
 ```C++
 LRESULT CALLBACK TestWndProc(HWND window, UINT msg, WPARAM wParam, LPARAM lParam)
 {
