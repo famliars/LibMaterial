@@ -20,7 +20,7 @@
 
 ## 参考代码
 
-> C++ 响应贴靠布局
+> C++ MaxButton 响应贴靠布局
 
 ```C++
 
@@ -47,8 +47,9 @@ LRESULT CALLBACK TestWndProc(HWND window, UINT msg, WPARAM wParam, LPARAM lParam
 }
 
 ```
+## 实现代码
 
-> C#
+> C# MaxButton 响应贴靠布局
 
 ```C#
 
