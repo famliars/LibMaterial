@@ -53,7 +53,7 @@ LRESULT CALLBACK TestWndProc(HWND window, UINT msg, WPARAM wParam, LPARAM lParam
 
 ```C#
 
-  \\ Unimplemented
+  // Unimplemented
 
 ```
 
