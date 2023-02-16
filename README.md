@@ -53,7 +53,42 @@ LRESULT CALLBACK TestWndProc(HWND window, UINT msg, WPARAM wParam, LPARAM lParam
 
 ```C#
 
-  // Unimplemented
+public partial class Window : Form
+
+    private new readonly bool ControlBox; 
+    private Control? btnMAX = null;
+    
+    public Window()
+    {
+        InitializeComponent();
+    }
+
+    [DllImport("User32", CharSet = CharSet.Unicode, SetLastError = true)]
+    public static extern bool PtInRect(ref Rectangle lprc, Point pt);
+    [DllImport("User32", CharSet = CharSet.Unicode, SetLastError = true)]
+    public static extern int MapWindowPoints(IntPtr hWndFrom, IntPtr hWndTo, ref Point lpPoints, [MarshalAs(UnmanagedType.U4)] int cPoints);
+    
+    protected override void WndProc(ref Message m)
+    {
+        switch ((WindowMessage)m.Msg)
+        {
+            case WM_NCHITTEST:
+            {
+            
+                Point NitPOINT = new Point((int)LParam & 0xFFFF, (int)LParam >> 16 & 0xFFFF);
+                MapWindowPoints(IntPtr.Zero, m.HWnd, ref NitPOINT, 1);
+
+                if (btnMAX != null && btnMAX.Bounds.Contains(NitPOINT))
+                {
+                    m.Result = IntPtrCode.HTMAXBUTTON;
+                    return;
+                }
+
+            }
+        }
+        base.WndProc(ref m);
+    }
+}
 
 ```
 
