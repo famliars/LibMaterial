@@ -46,7 +46,96 @@ LRESULT CALLBACK TestWndProc(HWND window, UINT msg, WPARAM wParam, LPARAM lParam
     return ::DefWindowProcW(window, msg, wParam, lParam);
 }
 
+> WPF Area Glass 效果 [url:https://github.com/Nukepayload2/sample-win10-aeroglass](Source)
+
+```C#
+
+using System;
+using System.Runtime.InteropServices;
+using System.Windows;
+using System.Windows.Interop;
+
+namespace BlurBehindDemo
+{
+	internal enum AccentState
+	{
+		ACCENT_DISABLED = 0,
+		ACCENT_ENABLE_GRADIENT = 1,
+		ACCENT_ENABLE_TRANSPARENTGRADIENT = 2,
+		ACCENT_ENABLE_BLURBEHIND = 3,
+		ACCENT_INVALID_STATE = 4
+	}
+
+	[StructLayout(LayoutKind.Sequential)]
+	internal struct AccentPolicy
+	{
+		public AccentState AccentState;
+		public int AccentFlags;
+		public int GradientColor;
+		public int AnimationId;
+	}
+
+	[StructLayout(LayoutKind.Sequential)]
+	internal struct WindowCompositionAttributeData
+	{
+		public WindowCompositionAttribute Attribute;
+		public IntPtr Data;
+		public int SizeOfData;
+	}
+
+	internal enum WindowCompositionAttribute
+	{
+		// ...
+		WCA_ACCENT_POLICY = 19
+		// ...
+	}
+
+	/// <summary>
+	/// Interaction logic for MainWindow.xaml
+	/// </summary>
+	public partial class MainWindow : Window
+	{
+		[DllImport("user32.dll")]
+		internal static extern int SetWindowCompositionAttribute(IntPtr hwnd, ref WindowCompositionAttributeData data);
+
+		public MainWindow()
+		{
+			InitializeComponent();
+		}
+		
+		private void Window_Loaded(object sender, RoutedEventArgs e)
+		{
+			EnableBlur();
+		}
+		
+		internal void EnableBlur()
+		{
+			var windowHelper = new WindowInteropHelper(this);
+			
+			var accent = new AccentPolicy();
+			accent.AccentState = AccentState.ACCENT_ENABLE_BLURBEHIND;
+
+			var accentStructSize = Marshal.SizeOf(accent);
+
+			var accentPtr = Marshal.AllocHGlobal(accentStructSize);
+			Marshal.StructureToPtr(accent, accentPtr, false);
+
+			var data = new WindowCompositionAttributeData();
+			data.Attribute = WindowCompositionAttribute.WCA_ACCENT_POLICY;
+			data.SizeOfData = accentStructSize;
+			data.Data = accentPtr;
+			
+			SetWindowCompositionAttribute(windowHelper.Handle, ref data);
+
+			Marshal.FreeHGlobal(accentPtr);
+		}
+
+
+	}
+}
+
 ```
+
 ## 实现代码
 
 > C# MaxButton 响应贴靠布局
@@ -89,6 +178,84 @@ public partial class Window : Form
         base.WndProc(ref m);
     }
 }
+
+```
+
+> WinForm Area Glass 效果
+
+```C#
+
+    public enum AccentState
+    {
+        ACCENT_DISABLED = 0,
+        ACCENT_ENABLE_GRADIENT = 1,
+        ACCENT_ENABLE_TRANSPARENTGRADIENT = 2,
+        ACCENT_ENABLE_BLURBEHIND = 3,
+        ACCENT_INVALID_STATE = 4
+    }
+    
+     public enum WindowCompositionAttribute
+    {
+        // ...
+        WCA_ACCENT_POLICY = 19
+        // ...
+    }
+    
+    public struct AccentPolicy
+    {
+        public AccentState AccentState;
+        public int AccentFlags;
+        public int GradientColor;
+        public int AnimationId;
+    }
+
+    
+    public struct WindowCompositionAttributeData
+    {
+        public WindowCompositionAttribute Attribute;
+        public IntPtr Data;
+        public int SizeOfData;
+    }
+
+    public partial class DwmWindow : Form
+    {
+        public DwmWindow()
+        {
+            InitializeComponent();
+        }
+
+
+        private void DwmWindow_Load(object sender, EventArgs e)
+        {
+            EnableBlur();
+        }
+
+        void EnableBlur()
+        {
+            // BackColor = Black 时 blur 才可以生效
+            BackColor = Color.Black;
+
+            var accent = new AccentPolicy();
+            accent.AccentState = AccentState.ACCENT_ENABLE_BLURBEHIND;
+
+            var accentStructSize = Marshal.SizeOf(accent);
+
+            var accentPtr = Marshal.AllocHGlobal(accentStructSize);
+            Marshal.StructureToPtr(accent, accentPtr, false);
+
+            var data = new WindowCompositionAttributeData();
+            data.Attribute = WindowCompositionAttribute.WCA_ACCENT_POLICY;
+            data.SizeOfData = accentStructSize;
+            data.Data = accentPtr;
+
+            SetWindowCompositionAttribute(Handle, ref data);
+
+            Marshal.FreeHGlobal(accentPtr);
+        }
+
+        
+    }
+
 
 ```
 
