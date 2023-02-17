@@ -193,7 +193,8 @@ public partial class Window : Form
         ACCENT_ENABLE_GRADIENT = 1,
         ACCENT_ENABLE_TRANSPARENTGRADIENT = 2,
         ACCENT_ENABLE_BLURBEHIND = 3,
-        ACCENT_INVALID_STATE = 4
+        ACCENT_ENABLE_ACRYLICBLURBEHIND = 4,
+        ACCENT_INVALID_STATE = 5,
     }
     
      public enum WindowCompositionAttribute
