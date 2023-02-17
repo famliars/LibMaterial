@@ -46,6 +46,8 @@ LRESULT CALLBACK TestWndProc(HWND window, UINT msg, WPARAM wParam, LPARAM lParam
     return ::DefWindowProcW(window, msg, wParam, lParam);
 }
 
+```
+
 > WPF Area Glass 效果 [url:https://github.com/Nukepayload2/sample-win10-aeroglass](Source)
 
 ```C#
