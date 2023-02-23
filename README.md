@@ -1,6 +1,6 @@
-# LibMica
+# LibMaterial
 
-> 为 WinForm 应用 Mica
+> 为 WinForm 应用 Mica，Acrylic
 
 > Plan ↻: Mica Effect
 
@@ -8,17 +8,17 @@
 
 ## Plan X
 
-![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_MAINWINDOW.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_MAINWINDOW.png)
 
-![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_TRANSIENTWINDOW.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_TRANSIENTWINDOW.png)
 
-![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_TABBEDWINDOW.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_TABBEDWINDOW.png)
 
-![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_TRANSIENTWINDOW.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_TRANSIENTWINDOW.png)
 
-![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_NONE.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_NONE.png)
 
-![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_AUTO.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_AUTO.png)
 
 ## Win32 API
 
@@ -38,7 +38,7 @@
 
 ## 实现代码
 
-> Example，[Clone](https://github.com/Simple-2021/LibMica.git)
+> Example，[Clone](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Example)
 
 ## 参考资料
 

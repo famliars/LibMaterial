@@ -1,4 +1,4 @@
-﻿namespace LibMica.Example
+﻿namespace Example
 {
     partial class MainWindow
     {
@@ -84,9 +84,9 @@
             Chk1.AutoSize = true;
             Chk1.Location = new Point(3, 3);
             Chk1.Name = "Chk1";
-            Chk1.Size = new Size(130, 21);
+            Chk1.Size = new Size(159, 21);
             Chk1.TabIndex = 1;
-            Chk1.Text = "Apply_Mica_Effect";
+            Chk1.Text = "Apply_Backdrop_Effect";
             Chk1.UseVisualStyleBackColor = true;
             Chk1.CheckedChanged += Apply_CheckedChanged;
             // 

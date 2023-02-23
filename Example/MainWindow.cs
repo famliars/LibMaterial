@@ -1,6 +1,7 @@
-using static LibMica.LibDll.DwmSystemBackdropTypeFlgs;
+using LibMaterial;
+using static LibMaterial.LibImport.DwmSystemBackdropTypeFlgs;
 
-namespace LibMica.Example
+namespace Example
 {
     public partial class MainWindow : Form
     {
@@ -24,24 +25,24 @@ namespace LibMica.Example
             {
                 case 1:
                     {
-                        LibMica.Apply_Mica_Effect(Handle, !ApplyBox.Checked, BackdropFlag);
+                        LibApply.Apply_Backdrop_Effect(Handle, !ApplyBox.Checked, BackdropFlag);
                     }
                     break;
                 case 2:
                     {
-                        LibMica.Apply_Light_Theme(Handle, !ApplyBox.Checked);
+                        LibApply.Apply_Light_Theme(Handle, !ApplyBox.Checked);
                     }
                     break;
                 case 3:
                     {
-                        LibMica.Apply_Transparent_Form(this, !ApplyBox.Checked);
+                        LibApply.Apply_Transparent_Form(Handle, !ApplyBox.Checked);
                     }
                     break;
             }
-            DescriptionBox.Text = LibMica.About_Method_Description(ApplyBox.Text);
+            DescriptionBox.Text = LibApply.About_Method_Description(ApplyBox.Text);
         }
 
-        private LibDll.DwmSystemBackdropTypeFlgs BackdropFlag;
+        private LibImport.DwmSystemBackdropTypeFlgs BackdropFlag;
         private void DWM_SBT_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton BackdropButton = (RadioButton)sender;
@@ -73,8 +74,8 @@ namespace LibMica.Example
                     }
                     break;
             }
-            LibMica.Apply_Mica_Effect(Handle, !Chk1.Checked, BackdropFlag);
-            DescriptionBox.Text = LibMica.About_Enum_Description(BackdropFlag);
+            LibApply.Apply_Backdrop_Effect(Handle, !Chk1.Checked, BackdropFlag);
+            DescriptionBox.Text = LibApply.About_Enum_Description(BackdropFlag);
         }
 
     }

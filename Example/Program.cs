@@ -1,6 +1,4 @@
-using LibMica.Example;
-
-namespace LibMica
+namespace Example
 {
     internal static class Program
     {

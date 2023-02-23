@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel;
 using System.Runtime.InteropServices;
 
-namespace LibMica
+namespace LibMaterial
 {
-    public static class LibDll
+    public static class LibImport
     {
         #region Dll Import
 
