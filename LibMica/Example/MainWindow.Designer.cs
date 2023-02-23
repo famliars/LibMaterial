@@ -69,7 +69,6 @@
             // 
             // FlowGrid1
             // 
-            FlowGrid1.AutoScroll = true;
             FlowGrid1.Controls.Add(Chk1);
             FlowGrid1.Controls.Add(Chk2);
             FlowGrid1.Controls.Add(Chk3);
@@ -115,7 +114,6 @@
             // 
             // FlowGrid2
             // 
-            FlowGrid2.AutoScroll = true;
             FlowGrid2.Controls.Add(SBT_0);
             FlowGrid2.Controls.Add(SBT_1);
             FlowGrid2.Controls.Add(SBT_2);
