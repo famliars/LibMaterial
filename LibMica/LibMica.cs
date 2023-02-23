@@ -3,17 +3,16 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using static LibMica.LibDll;
 using static LibMica.LibDll.DwmSetWindowAttributeFlags;
+using static LibMica.LibDll.DwmSystemBackdropTypeFlgs;
 namespace LibMica
 {
     public static class LibMica
     {
         [Description("在 Win32 应用中支持云母材质")]
-        public static void Apply_Mica_Effect(IntPtr HWnd, bool Disable = false)
+        public static void Apply_Mica_Effect(IntPtr HWnd, bool Disable = false, DwmSystemBackdropTypeFlgs BackdropFlag= DWMSBT_TABBEDWINDOW)
         {
-            var IsOld = Environment.OSVersion.Version < new Version("10.0.22523");
-            int Key = IsOld ? 1 : 2;
-            Key = Disable ? 0 : Key;
-            DwmSetWindowAttribute(HWnd, IsOld ? DWM_MICA_EFFECT : DWM_SYSTEMBACKDROP_TYPE, ref Key, Marshal.SizeOf(typeof(int)));
+            int Key = (int)(Disable ? DWMSBT_NONE : BackdropFlag);
+            DwmSetWindowAttribute(HWnd, DWM_SYSTEMBACKDROP_TYPE, ref Key, Marshal.SizeOf(typeof(int)));
         }
         [Description("在 Win32 应用中支持深色和浅色主题")]
         public static void Apply_Light_Theme(IntPtr HWnd, bool Disable = false)
@@ -30,6 +29,12 @@ namespace LibMica
         public static string? About_Method_Description(string MethodName)
         {
             return typeof(LibMica).GetMethod(MethodName)?.GetCustomAttribute<DescriptionAttribute>()?.Description;
+        }
+        [Description("获取关于指定枚举的描述")]
+        public static string? About_Enum_Description(Enum EnumFlag)
+        {
+            Type type = EnumFlag.GetType();
+            return type.GetField(Enum.GetName(type, EnumFlag)!)?.GetCustomAttribute<DescriptionAttribute>()?.Description;
         }
     }
 }

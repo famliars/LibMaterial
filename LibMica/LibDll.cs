@@ -7,13 +7,14 @@ namespace LibMica
     {
         #region Dll Import
 
-        [DllImport("dwmapi.dll")]
+        [DllImport("dwmapi.dll"),Description("https://learn.microsoft.com/zh-cn/windows/win32/api/dwmapi/nf-dwmapi-dwmsetwindowattribute")]
         internal static extern IntPtr DwmSetWindowAttribute(IntPtr hwnd, DwmSetWindowAttributeFlags dwAttribute, ref int pvAttribute, int cbAttribute);
 
         #endregion
 
         #region Dll Enum
 
+        [Description("https://learn.microsoft.com/zh-cn/windows/win32/api/dwmapi/ne-dwmapi-dwmwindowattribute")]
         public enum DwmSetWindowAttributeFlags
         {
             DWM_NCRENDERING_ENABLED,
@@ -42,6 +43,20 @@ namespace LibMica
             DWM_SYSTEMBACKDROP_TYPE,
             DWM_LAST,
             DWM_MICA_EFFECT = 1029
+        };
+        [Description("https://learn.microsoft.com/zh-cn/windows/win32/api/dwmapi/ne-dwmapi-dwm_systembackdrop_type")]
+        public enum DwmSystemBackdropTypeFlgs
+        {
+            [Description("默认值。 让桌面窗口管理器 (DWM) 自动确定此窗口的系统绘制背景材料")]
+            DWMSBT_AUTO,
+            [Description("不要绘制任何系统背景。")]
+            DWMSBT_NONE,
+            [Description("绘制对应于长期窗口的背景材料效果。")]
+            DWMSBT_MAINWINDOW,
+            [Description("绘制对应于暂时性窗口的背景材料效果。")]
+            DWMSBT_TRANSIENTWINDOW,
+            [Description("绘制与带有选项卡标题栏的窗口对应的背景材料效果。")]
+            DWMSBT_TABBEDWINDOW
         };
 
         #endregion
