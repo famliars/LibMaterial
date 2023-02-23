@@ -15,9 +15,4 @@
     <None Remove="Properties\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="PInvoke.DwmApi" Version="0.7.124" />
-    <PackageReference Include="PInvoke.User32" Version="0.7.124" />
-  </ItemGroup>
-
 </Project>
