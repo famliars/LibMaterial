@@ -7,6 +7,9 @@ namespace LibMica.Example
         public MainWindow()
         {
             InitializeComponent();
+            Chk1.Checked =
+            Chk2.Checked =
+            Chk3.Checked =
             SBT_2.Checked = true;
         }
         private void MainWindow_SystemColorsChanged(object sender, EventArgs e)
