@@ -9,10 +9,15 @@
 ## Plan X
 
 ![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_MAINWINDOW.png)
+
 ![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_TRANSIENTWINDOW.png)
+
 ![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_TABBEDWINDOW.png)
+
 ![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_TRANSIENTWINDOW.png)
+
 ![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_NONE.png)
+
 ![image](https://github.com/Simple-2021/LibMica/blob/main/Images/DWMSBT_AUTO.png)
 
 ## Win32 API
@@ -26,18 +31,14 @@
 ## 参考代码
 
 > 在 Win32 应用中支持云母材质
-[No Href]()
 
-> 在 Win32 应用中支持深色和浅色主题
-[The Href](https://learn.microsoft.com/zh-cn/windows/apps/desktop/modernize/apply-windows-themes)
+> 在 Win32 应用中支持深色和浅色主题，[阅读更多](https://learn.microsoft.com/zh-cn/windows/apps/desktop/modernize/apply-windows-themes)
 
-> 在 Win32 应用中支持透明客户端区域
-[The Href](https://learn.microsoft.com/zh-cn/dotnet/api/system.windows.forms.form.transparencykey?view=windowsdesktop-6.0)
+> 在 Win32 应用中支持透明客户端区域，[阅读更多](https://learn.microsoft.com/zh-cn/dotnet/api/system.windows.forms.form.transparencykey?view=windowsdesktop-6.0)
 
 ## 实现代码
 
-> Example
-[The Href](https://github.com/Simple-2021/LibMica/blob/main/LibMica)
+> Example，[Clone](https://github.com/Simple-2021/LibMica.git)
 
 ## 参考资料
 
