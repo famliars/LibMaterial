@@ -32,3 +32,4 @@
 *.app
 /.vs
 /LibWindows/obj
+/LibWindows/bin
