@@ -8,17 +8,15 @@
 
 ## Plan X
 
-![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_MAINWINDOW.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_MAINWINDOW.jpg)
 
-![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_TRANSIENTWINDOW.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_TRANSIENTWINDOW.jpg)
 
-![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_TABBEDWINDOW.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_TABBEDWINDOW.jpg)
 
-![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_TRANSIENTWINDOW.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_NONE.jpg)
 
-![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_NONE.png)
-
-![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_AUTO.png)
+![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_AUTO.jpg)
 
 ## Win32 API
 
