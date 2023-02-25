@@ -12,12 +12,6 @@
 
 ![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_TRANSIENTWINDOW.jpg)
 
-![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_TABBEDWINDOW.jpg)
-
-![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_NONE.jpg)
-
-![image](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Images/DWMSBT_AUTO.jpg)
-
 ## Win32 API
 
 > DwmSetWindowAttribute
