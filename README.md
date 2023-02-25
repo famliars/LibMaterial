@@ -36,7 +36,7 @@
 
 ## 实现代码
 
-> Example，[Clone](https://raw.githubusercontent.com/Simple-2021/LibMaterial/main/Example)
+> Example，[查看](https://github.com/Simple-2021/LibMaterial/main/Example)
 
 ## 参考资料
 
