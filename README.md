@@ -30,7 +30,7 @@
 
 ## 实现代码
 
-> Example，[查看](https://github.com/Simple-2021/LibMaterial/main/Example)
+> Example，[查看](https://github.com/Simple-2021/LibMaterial/tree/main/Example)
 
 ## 参考资料
 
