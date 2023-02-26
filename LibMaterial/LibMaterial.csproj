@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Title>LibMaterial</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.2.7</Version>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryType>Git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>MIT</Copyright>
+    <Description>为 Winform 应用 Mica，Acrylic</Description>
+    <PackageProjectUrl>https://github.com/Simple-2021/LibMaterial</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Simple-2021/LibMaterial.git</RepositoryUrl>
+    <PackageTags>Winform,Mica,Acrylic,Windows11,Material</PackageTags>
+    <PackageReleaseNotes>修复 Dark 模式下 Label，CheckBox，RadioButton 的文本锯齿问题</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
