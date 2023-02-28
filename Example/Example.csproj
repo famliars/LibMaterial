@@ -9,9 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="LibMaterial">
-      <HintPath>..\LibMaterial\bin\Debug\net6.0-windows\LibMaterial.dll</HintPath>
-    </Reference>
+    <PackageReference Include="LibMaterial" Version="1.2.7" />
   </ItemGroup>
 
 </Project>
