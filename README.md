@@ -30,7 +30,38 @@
 
 ## 实现代码
 
-> Example，[查看](https://github.com/Simple-2021/LibMaterial/tree/main/Example)
+> Example，[阅读更多](https://github.com/Simple-2021/LibMaterial/tree/main/Example)
+
+> Demo
+
+```csharp
+
+using LibMaterial;
+
+namespace Win11Forms
+{
+    public partial class Window : Form
+    {
+
+        public Window()
+        {
+            InitializeComponent();
+            base.OnSystemColorsChanged(EventArgs.Empty);
+            LibApply.Apply_Backdrop_Effect(HWnd: Handle, BackdropFlag: LibImport.DwmSystemBackdropTypeFlgs.DWMSBT_MAINWINDOW);
+        }
+
+        private void Window_SystemColorsChanged(object sender, EventArgs e)
+        {
+            bool DarkStatus = !LibRegistry.GetAppUseLightTheme();
+            LibApply.Apply_Light_Theme(HWnd: Handle, Dark: DarkStatus);
+            LibApply.Apply_Transparent_Form(HWnd: Handle, Dark: DarkStatus);
+        }
+
+    }
+
+}
+
+```
 
 ## 参考资料
 
