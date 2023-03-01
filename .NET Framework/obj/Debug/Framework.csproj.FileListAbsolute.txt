@@ -1,0 +1,6 @@
+D:\Program Project\Simple-2021\LibMaterial\Framework\obj\Debug\Framework.csproj.AssemblyReference.cache
+D:\Program Project\Simple-2021\LibMaterial\Framework\obj\Debug\Framework.csproj.CoreCompileInputs.cache
+D:\Program Project\Simple-2021\LibMaterial\Framework\bin\Debug\Framework.dll
+D:\Program Project\Simple-2021\LibMaterial\Framework\bin\Debug\Framework.pdb
+D:\Program Project\Simple-2021\LibMaterial\Framework\obj\Debug\Framework.dll
+D:\Program Project\Simple-2021\LibMaterial\Framework\obj\Debug\Framework.pdb

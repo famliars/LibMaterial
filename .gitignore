@@ -1,9 +1,5 @@
 /.vs
 
-/Example/.vs
-/Example/bin
-/Example/obj
-
-/LibMaterial/.vs
-/LibMaterial/bin
-/LibMaterial/obj
+/*/.vs
+/*/bin
+/*/obj

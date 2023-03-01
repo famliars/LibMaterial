@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LibMaterial</id>
+    <version>1.2.7</version>
+    <title>LibMaterial</title>
+    <authors>LibMaterial</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/Simple-2021/LibMaterial</projectUrl>
+    <description>为 Winform 应用 Mica，Acrylic</description>
+    <releaseNotes>修复 Dark 模式下 Label，CheckBox，RadioButton 的文本锯齿问题</releaseNotes>
+    <copyright>MIT</copyright>
+    <tags>Winform,Mica,Acrylic,Windows11,Material</tags>
+    <repository type="Git" url="https://github.com/Simple-2021/LibMaterial.git" />
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\Program Project\Simple-2021\LibMaterial\.NET\bin\Debug\net6.0-windows\LibMaterial.dll" target="lib\net6.0-windows7.0\LibMaterial.dll" />
+    <file src="D:\Program Project\Simple-2021\LibMaterial\LICENSE" target="\LICENSE" />
+    <file src="D:\Program Project\Simple-2021\LibMaterial\README.md" target="\README.md" />
+  </files>
+</package>

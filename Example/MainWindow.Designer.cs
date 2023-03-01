@@ -84,7 +84,7 @@
             Chk1.AutoSize = true;
             Chk1.Location = new Point(3, 3);
             Chk1.Name = "Chk1";
-            Chk1.Size = new Size(159, 21);
+            Chk1.Size = new Size(150, 16);
             Chk1.TabIndex = 1;
             Chk1.Text = "Apply_Backdrop_Effect";
             Chk1.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
             // Chk2
             // 
             Chk2.AutoSize = true;
-            Chk2.Location = new Point(3, 30);
+            Chk2.Location = new Point(3, 25);
             Chk2.Name = "Chk2";
-            Chk2.Size = new Size(137, 21);
+            Chk2.Size = new Size(126, 16);
             Chk2.TabIndex = 2;
             Chk2.Text = "Apply_Light_Theme";
             Chk2.UseVisualStyleBackColor = true;
@@ -104,9 +104,9 @@
             // Chk3
             // 
             Chk3.AutoSize = true;
-            Chk3.Location = new Point(3, 57);
+            Chk3.Location = new Point(3, 47);
             Chk3.Name = "Chk3";
-            Chk3.Size = new Size(170, 21);
+            Chk3.Size = new Size(156, 16);
             Chk3.TabIndex = 3;
             Chk3.Text = "Apply_Transparent_Form";
             Chk3.UseVisualStyleBackColor = true;
@@ -131,7 +131,7 @@
             SBT_0.AutoSize = true;
             SBT_0.Location = new Point(3, 3);
             SBT_0.Name = "SBT_0";
-            SBT_0.Size = new Size(120, 21);
+            SBT_0.Size = new Size(89, 16);
             SBT_0.TabIndex = 0;
             SBT_0.TabStop = true;
             SBT_0.Text = "DWMSBT_AUTO";
@@ -141,9 +141,9 @@
             // SBT_1
             // 
             SBT_1.AutoSize = true;
-            SBT_1.Location = new Point(3, 30);
+            SBT_1.Location = new Point(3, 25);
             SBT_1.Name = "SBT_1";
-            SBT_1.Size = new Size(123, 21);
+            SBT_1.Size = new Size(89, 16);
             SBT_1.TabIndex = 1;
             SBT_1.TabStop = true;
             SBT_1.Text = "DWMSBT_NONE";
@@ -153,9 +153,9 @@
             // SBT_2
             // 
             SBT_2.AutoSize = true;
-            SBT_2.Location = new Point(3, 57);
+            SBT_2.Location = new Point(3, 47);
             SBT_2.Name = "SBT_2";
-            SBT_2.Size = new Size(177, 21);
+            SBT_2.Size = new Size(125, 16);
             SBT_2.TabIndex = 2;
             SBT_2.TabStop = true;
             SBT_2.Text = "DWMSBT_MAINWINDOW";
@@ -165,9 +165,9 @@
             // SBT_3
             // 
             SBT_3.AutoSize = true;
-            SBT_3.Location = new Point(3, 84);
+            SBT_3.Location = new Point(3, 69);
             SBT_3.Name = "SBT_3";
-            SBT_3.Size = new Size(211, 21);
+            SBT_3.Size = new Size(155, 16);
             SBT_3.TabIndex = 3;
             SBT_3.TabStop = true;
             SBT_3.Text = "DWMSBT_TRANSIENTWINDOW";
@@ -177,9 +177,9 @@
             // SBT_4
             // 
             SBT_4.AutoSize = true;
-            SBT_4.Location = new Point(3, 111);
+            SBT_4.Location = new Point(3, 91);
             SBT_4.Name = "SBT_4";
-            SBT_4.Size = new Size(190, 21);
+            SBT_4.Size = new Size(137, 16);
             SBT_4.TabIndex = 4;
             SBT_4.TabStop = true;
             SBT_4.Text = "DWMSBT_TABBEDWINDOW";
@@ -200,6 +200,7 @@
             // 
             ClientSize = new Size(834, 511);
             Controls.Add(TableGrid);
+            Font = new Font("宋体", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "MainWindow";
             Text = "Example";
             SystemColorsChanged += MainWindow_SystemColorsChanged;

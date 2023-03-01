@@ -63,6 +63,17 @@ namespace Win11Forms
 
 ```
 
+## 版本支持
+
+> LibMaterial(.NET)
+>+ .NET 6.0+
+
+> LibMaterial.Core
+>+ .NET Core 3.1+
+
+> LibMaterial.Framework
+>+ .NET Framework 4.7.1+
+
 ## 参考资料
 
 > SEARCH.BING.COM

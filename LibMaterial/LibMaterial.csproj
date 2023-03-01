@@ -8,7 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Title>LibMaterial</Title>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.2.7</Version>
+    <Version>1.2.8</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <RepositoryType>Git</RepositoryType>
@@ -18,7 +18,7 @@
     <PackageProjectUrl>https://github.com/Simple-2021/LibMaterial</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Simple-2021/LibMaterial.git</RepositoryUrl>
     <PackageTags>Winform,Mica,Acrylic,Windows11,Material</PackageTags>
-    <PackageReleaseNotes>修复 Dark 模式下 Label，CheckBox，RadioButton 的文本锯齿问题</PackageReleaseNotes>
+    <PackageReleaseNotes>添加 LibSymbol 以提供对 字体图标 的引用实现</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,5 @@
+D:\Program Project\Simple-2021\LibMaterial\.NET\obj\Debug\netcoreapp3.1\LibMaterial.csproj.AssemblyReference.cache
+D:\Program Project\Simple-2021\LibMaterial\.NET\obj\Debug\netcoreapp3.1\LibMaterial.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Project\Simple-2021\LibMaterial\.NET\obj\Debug\netcoreapp3.1\LibMaterial.AssemblyInfoInputs.cache
+D:\Program Project\Simple-2021\LibMaterial\.NET\obj\Debug\netcoreapp3.1\LibMaterial.AssemblyInfo.cs
+D:\Program Project\Simple-2021\LibMaterial\.NET\obj\Debug\netcoreapp3.1\LibMaterial.csproj.CoreCompileInputs.cache
